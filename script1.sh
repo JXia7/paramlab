@@ -19,7 +19,7 @@ else
     for file_or_directory in "$@"; do
         if [ -d $file_or_directory ]; then
             echo "$file_or_directory exists"
-            echo "$file_or_directory" > $directory_list
+            echo "$file_or_directory" >> $directory_list
         fi
     done
 fi
@@ -33,7 +33,7 @@ else
     for file_or_directory in "$@"; do
         if [ -f $file_or_directory ]; then
             echo "$file_or_directory exists"
-            echo "$file_or_directory" > $file_list
+            echo "$file_or_directory" >> $file_list
         fi
     done
 fi
